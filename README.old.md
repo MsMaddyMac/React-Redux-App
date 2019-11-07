@@ -19,9 +19,10 @@ In this project you'll choose an api to consume. You will build an application f
 - [ ] Create a forked copy of this project.
 - [ ] Add your team lead as collaborator on Github.
 - [ ] Clone your OWN version of the repository in your terminal
-- [ ] CD into the project base directory `cd react-redux-app`
 - [ ] Use CRA to create a new React app, the `cd` into the react app
+- [ ] CD into the project base directory `cd react-redux-app`
 - [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
+- [ ] Install dependencies
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.

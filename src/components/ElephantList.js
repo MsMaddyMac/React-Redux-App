@@ -4,6 +4,7 @@ import { ElephantCard } from './ElephantCard'
 export const ElephantList = () => {
     return (
         <div>
+            <button>Enter</button>
             <ElephantCard />
         </div>
     )

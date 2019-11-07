@@ -6,7 +6,8 @@ import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 // Components imports
-import { ElephantList } from './components/ElephantList';
+import reducer from './reducers';
+import ElephantList from './components/ElephantList';
 
 const store = createStore(
   reducer, 

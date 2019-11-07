@@ -1,11 +1,24 @@
 import React from 'react'
+// import bridge
+import { connect } from 'react-redux';
+// import thunk middleware function
+import { fetchElephants } from '../actions';
 import { ElephantCard } from './ElephantCard'
 
-export const ElephantList = () => {
+function ElephantList(props) {
     return (
-        <div>
+        <>
             <button>Enter</button>
-            <ElephantCard />
-        </div>
+            <div className="allCards">
+                <ElephantCard />
+            </div>
+        </>
     )
 }
+
+const mapStateToProps = {
+    fetchElephants
+};
+
+export default connect(state => {
+    return state;})(ElephantList);

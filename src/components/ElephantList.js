@@ -10,11 +10,11 @@ function ElephantList(props) {
         <>
             <h4>Press button to see Elephants!</h4>
             <button onClick={() => props.dispatch(fetchElephants())}>Enter</button>
-            {props.isFetching && <div> Here comes the herd 🐘🐘🐘!!</div>}
+            {props.isFetching && <span> Here comes the herd 🐘🐘🐘!!</span>}
             {props.error && <div>{props.error.message}</div>}
             <div className="allCards">
-                {props.elephants.map(elephant => (
-                    <ElephantCard elephant={elephant} />
+                {props.elephants.map((elephant, id) => (
+                    <ElephantCard elephant={elephant} key={id} />
                 ))}
             </div>
         </>

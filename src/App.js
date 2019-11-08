@@ -18,7 +18,11 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <h1>🐘Meet The Elephants!🐘</h1>
+        <header>
+          <span>🐘</span>
+          <h1>Meet The Elephants!</h1>
+          <span>🐘</span>
+        </header>
         <ElephantList />
       </div>
     </Provider>

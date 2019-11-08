@@ -1,13 +1,14 @@
 import React from 'react'
 
-export const ElephantCard = () => {
+export const ElephantCard = (props) => {
+    console.log(props);
     return (
-        <div>
-            <img></img>
-            <h3>Name</h3>
-            <p>Species:</p>
-            <p>Gender:</p>
-            <p>note:</p>
+        <div key={props.elephant.id}>
+            <img src={props.elephant.image} alt="Elephant"></img>
+            <h3>{props.elephant.name}</h3>
+            <p>Species: {props.elephant.species}</p>
+            <p>Gender: {props.elephant.sex}</p>
+            <p>note:{props.elephant.note}</p>
         </div>
     )
 }
